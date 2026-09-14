@@ -1,13 +1,22 @@
-# WOL DualBoot Agent: descargas
+# WOL DualBoot Agent
 
-Instaladores oficiales de **WOL DualBoot Agent**, publicados por Codebes.
+> Enciende y controla tu PC desde Android. Instaladores oficiales para Windows y Linux, publicados por Codebes.
+> Wake and control your PC from Android. Official Windows and Linux installers, published by Codebes.
 
-- **Descargar la última versión:** [Releases](https://github.com/codebes-com/woldualboot-agent-releases/releases/latest)
-- **Web y documentación:** [codebes.com/woldualboot/agent](https://codebes.com/woldualboot/agent)
+**Idioma / Language:** [Español](#español) · [English](#english)
 
-Este repositorio solo contiene las releases: el instalador `.msi` para Windows, el paquete `.deb` para Debian/Ubuntu y el archivo `SHA256SUMS.txt`. No contiene código fuente ni acepta contribuciones. Para soporte escribe a contact@codebes.com.
+- ⬇️ **Descargar / Download:** [última release / latest release](https://github.com/codebes-com/woldualboot-agent-releases/releases/latest)
+- 🌐 **Web:** [codebes.com](https://codebes.com/woldualboot/agent)
+- ✉️ **Soporte / Support:** contact@codebes.com
 
-## Instalar en Windows
+> Este repositorio solo contiene los instaladores (`.msi`, `.deb`) y sus `SHA256SUMS.txt`. No contiene código fuente ni acepta contribuciones.
+> This repository only holds the installers (`.msi`, `.deb`) and their `SHA256SUMS.txt`. It has no source code and does not accept contributions.
+
+---
+
+## Español
+
+### Instalar en Windows
 
 1. Descarga `woldualboot-agent-<versión>-windows-amd64.msi` de la [última release](https://github.com/codebes-com/woldualboot-agent-releases/releases/latest).
 2. Haz doble clic en el `.msi`.
@@ -15,7 +24,7 @@ Este repositorio solo contiene las releases: el instalador `.msi` para Windows, 
 4. Acepta el aviso de **UAC** (hacen falta permisos de administrador para el servicio y el firewall).
 5. Se instala un **servicio** y la **aplicación de bandeja**. El icono de la bandeja aparece al **volver a iniciar sesión**; ábrelo para mostrar el QR de emparejamiento.
 
-## Instalar en Linux (Debian/Ubuntu)
+### Instalar en Linux (Debian/Ubuntu)
 
 1. Descarga `woldualboot-agent_<versión>_amd64.deb`.
 2. Instálalo por terminal (resuelve la dependencia `ethtool`):
@@ -29,19 +38,17 @@ Este repositorio solo contiene las releases: el instalador `.msi` para Windows, 
 
 Después, escanea el QR desde la app Android. Guía completa: [primeros pasos](https://codebes.com/documentacion/primeros-pasos).
 
-## Verificar la descarga
+### Verificar la descarga
 
 Compara el SHA-256 del archivo descargado con el valor de `SHA256SUMS.txt` de la misma release.
 
-Windows (PowerShell):
-
 ```powershell
+# Windows (PowerShell)
 Get-FileHash .\woldualboot-agent-<versión>-windows-amd64.msi -Algorithm SHA256
 ```
 
-Linux:
-
 ```bash
+# Linux
 sha256sum -c SHA256SUMS.txt --ignore-missing
 ```
 
@@ -50,13 +57,6 @@ Si el valor no coincide, no instales el archivo. Guía completa: [verificación 
 ---
 
 ## English
-
-Official **WOL DualBoot Agent** installers, published by Codebes.
-
-- **Download the latest version:** [Releases](https://github.com/codebes-com/woldualboot-agent-releases/releases/latest)
-- **Website and documentation:** [codebes.com/en/woldualboot/agent](https://codebes.com/en/woldualboot/agent)
-
-This repository only holds releases: the Windows `.msi` installer, the Debian/Ubuntu `.deb` package and `SHA256SUMS.txt`. It contains no source code and does not accept contributions. For support, write to contact@codebes.com.
 
 ### Install on Windows
 
@@ -83,3 +83,7 @@ Then scan the QR from the Android app. Full guide: [getting started](https://cod
 ### Verify the download
 
 Compare the downloaded file's SHA-256 with the value in `SHA256SUMS.txt` from the same release. Full guide: [download verification](https://codebes.com/en/documentation/download-verification).
+
+---
+
+© Codebes · [codebes.com](https://codebes.com)
